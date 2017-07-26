@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Portfolio Site</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+
+        <!-- header -->
+        <header class="row">
+          <div class="col-xs-6 col-md-6 col-lg-6">
+            <picture>
+              <source srcset="img/logo.webp" type="image/webp">
+              <img src="img/logo.png" class="logo pull-left" alt="portfolio logo">
+            </picture>
+          </div>
+          <div class="col-xs-6 col-md-6 col-lg-6">
+            <h1>NIKHIL GANTA</h1>
+            <h4>FRONT-END NINJA</h4>
+          </div>
+        </header>
+
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <hr>
+          </div>
+        </div>
+
+        <!-- Cover Image -->
+        <div class="row">
+          <div class="col-md-12">
+            <picture>
+              <source media="(min-width: 1000px)" srcset="img/project-4_1000.webp" type="image/webp">
+              <source media="(min-width: 1000px)" srcset="img/project-4_1000.jpg">
+              <source media="(min-width: 600px)" srcset="img/project-4_600.webp" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/project-4_600.jpg">
+              <source srcset="img/project-4_350.webp" type="image/webp">
+              <img src="img/project-4_350.jpg" class="portfolio-cover center-block img-responsive" alt="cover image">
+            </picture>
+          </div>
+        </div>
+
+        <!-- Featured Work -->
+        <section class="row">
+          <div class="col-md-3">
+            <h2>Featured Work</h2>
+          </div>
+        </section>
+        <section class="row featuredwork">
+
+          <!-- Project-1 -->
+          <div class="col-md-4 work1">
+            <picture>
+              <source media="(min-width: 600px)" srcset="img/project-1_600.webp" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/project-1_600.jpg">
+              <source srcset="img/project-1_350.webp" type="image/webp">
+              <img src="img/project-1_350.jpg" class="project center-block img-responsive" data-toggle="modal" data-target="#project1" alt="letter to self">
+            </picture>
+            <h3>Project 1</h3>
+            <h4>A Letter to Self</h4>
+            <a href="https://github.com/nikhilganta/Udacity-Project-1-A-letter-to-Self.git" target="_blank">Link to the Project</a>
+          </div>
+
+          <!-- Project-2 -->
+          <div class="col-md-4 work2">
+            <picture>
+              <source media="(min-width: 600px)" srcset="img/project-2_600.webp" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/project-2_600.jpg">
+              <source srcset="img/project-2_350.webp" type="image/webp">
+              <img src="img/project-2_350.jpg" class="project center-block img-responsive" data-toggle="modal" data-target="#project2" alt="replicated mockup article">
+            </picture>
+            <h3>Project 2</h3>
+            <h4>Mockup Article</h4>
+            <a href="https://github.com/nikhilganta/Udacity-Project-2-Mockup-Article.git" target="_blank">Link to the project</a>
+          </div>
+
+          <!-- Project-3 -->
+          <div class="col-md-4 work3">
+            <picture>
+              <source srcset="img/project-3_350.webp" type="image/webp">
+              <img src="img/project-3_350.jpg" class="project center-block img-responsive" data-toggle="modal" data-target="#project3" alt="animal card">
+            </picture>
+            <h3>Project 3</h3>
+            <h4>Animal Card</h4>
+            <a href="https://github.com/nikhilganta/Udacity-Project-3-Animal-Card.git" target="_blank">Link to the project</a>
+          </div>
+        </section> <!-- Featured Work -->
+
+        <!-- Footer -->
+        <footer>
+          <p>Portfolio of <a href="https://github.com/nikhilganta">Nikhil Ganta</a></p>
+        </footer>
+  </div> <!-- container -->
+
+    <!-- Modals -->
+    <!-- Modal project1-->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">A Letter to Self</h4>
+              </div>
+              <div class="modal-body">
+                  <picture>
+                    <source media="(min-width: 600px)" srcset="img/project-1_600.webp" type="image/webp">
+                    <source media="(min-width: 600px)" srcset="img/project-1_600.jpg">
+                    <source srcset="img/project-1_350.webp" type="image/webp">
+                    <img src="img/project-1_350.jpg" class="center-block img-responsive" alt="letter to self">
+                  </picture>
+                  <p class="description"><strong>This was my first project during my  Front End Nanodegree course at Udacity. I was initially mentioned everything about the history of Front End Development, and where I stand in that evolving history. After that I was told to reflect on what my journey will be like as I develop my skills. So I was instructed to write a letter to my future self describing how I can overcome any challenge ahead in this Nanodegree, and set some goals for what I want to achieve.</strong></p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal project2-->
+  <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Mockup Article</h4>
+            </div>
+            <div class="modal-body">
+                <picture>
+                  <source media="(min-width: 600px)" srcset="img/project-2_600.webp" type="image/webp">
+                  <source media="(min-width: 600px)" srcset="img/project-2_600.jpg">
+                  <source srcset="img/project-2_350.webp" type="image/webp">
+                  <img src="img/project-2_350.jpg" class="center-block img-responsive" alt="replicated mockup article">
+                </picture>
+                <p class="description"><strong>This was my second project during my Front End Nanodegree course at Udacity. Using the HTML skills taught I was told to translate a mockup to HTML. </strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal project3-->
+  <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Animal Card</h4>
+            </div>
+            <div class="modal-body">
+                <picture>
+                  <source srcset="img/project-3_350.webp" type="image/webp">
+                  <img src="img/project-3_350.jpg" class="center-block img-responsive" alt="animal card">
+                </picture>
+                <p class="description"><strong>This was my third project during my Front End Nanodegree course at Udacity. Using the basic HTML and CSS skills taught during the course to create an "<em>Animal Card"</em>. I was provided with a design prototype that needs to translated to an actual, funtional website as in most cases, the designers only provide us with the design prototype.</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+</body>
+</html>
